@@ -32,25 +32,7 @@ const App2 = () => {
     const base64Image = canvas.toDataURL("image/jpg");
     setImage(base64Image);
 
-    // Send the Base64 image to the API
-    axios({
-      method: "POST",
-      url: "https://detect.roboflow.com/plastic-recyclable-detection/2",
-      params: {
-        api_key: process.env.VITE_API_KEY,
-      },
-      data: base64Image,
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-    })
-      .then(function (response) {
-        console.log(response.data);
-        setPrediction(response.data.predictions);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+    // Send the Base64 image to the API for ML based classification
   };
 
   return (
