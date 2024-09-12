@@ -125,6 +125,14 @@ const plasticData = {
     recycleProcess:
       "Plastic furniture made from HDPE is collected, cleaned, and shredded before being melted and re-extruded into new furniture or plastic containers.",
   },
+  "plastic tableware": {
+    grade: "HDPE (High-Density Polyethylene)",
+    degradationTime: "500 years",
+    recycleValue: "Moderate",
+    recyclingMethods: "Recycled into new plastic tableware or containers.",
+    recycleProcess:
+      "Plastic tableware made from HDPE is collected, cleaned, and shredded before being melted and re-extruded into new tableware or plastic containers.",
+  },
 };
 
 export default plasticData;
