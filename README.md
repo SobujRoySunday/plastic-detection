@@ -32,8 +32,8 @@ Ensure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/plastic-detection-app.git
-   cd plastic-detection-app
+   git clone https://github.com/your-username/plastic-detection.git
+   cd plastic-detection
    ```
 
 2. Install dependencies:
