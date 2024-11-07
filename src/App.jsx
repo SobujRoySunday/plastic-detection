@@ -68,7 +68,10 @@ const App2 = () => {
       <ToastContainer />
       {loading && <Loader />}
       <div className="relative flex flex-col gap-2">
-        <h1 className="text-white text-3xl self-center font-semibold">Plastic Detection</h1>
+        <div className="flex flex-row items-center self-center gap-2">
+          <img src="./logo.png" alt="logo" className="w-[2rem] h-[2rem]" />
+          <h1 className="text-white text-3xl self-center font-semibold">Plastic Detection</h1>
+        </div>
         {image && <img src={image} alt="Captured image" className="rounded" />}
         {prediction &&
           prediction.map((item, index) => {
